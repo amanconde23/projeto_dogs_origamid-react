@@ -5,7 +5,7 @@ const types = {
     regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     message: 'Preencha um email válido',
   },
-};
+}
 
 const useForm = (type) => {
   const [value, setValue] = React.useState('');
@@ -37,7 +37,7 @@ const useForm = (type) => {
     error,
     validate: () => validate(value),
     onBlur: () => validate(value),
-  };
-};
+  }
+}
 
 export default useForm;
